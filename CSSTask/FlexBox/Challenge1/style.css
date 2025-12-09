@@ -1,0 +1,28 @@
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 380px;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  border-radius: 10px;
+  border: none;
+}
+
+.box {
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  font-size: 50px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
