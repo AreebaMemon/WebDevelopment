@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2 i {
+  font-style: normal;
+}
+
+h2::before {
+  content: "🐾 ";
+  font-size: 28px;
+}
+
+/* Main Heading Styles */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2d3748;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+span {
+  color: #9d6f24;
+  background: linear-gradient(135deg, #ffd89b 0%, #19547b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #4a5568;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Card Styles */
+.card {
+  width: 400px;
+  border: none;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 10px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+img {
+  width: 100%;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #d56f3e;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+#pets {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Footer Styles */
+footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+footer h4 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+footer p {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+footer .contact {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  #pets {
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
